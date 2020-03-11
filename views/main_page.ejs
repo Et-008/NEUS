@@ -1,0 +1,18 @@
+<%- include ('header.html') %>
+
+<div class='card'>
+<% content.forEach(function(data){ %>
+	<div class='card-img-top d-flex justify-content-center'>
+		<img height='600' width='80%' src = <%= data.urlToImage %> >
+	</div>
+	<div class='card-body main_content'>
+		<h5 class='card-title text-center'><%= data.description %></h5>
+		<p class='card-text text-justify text-center'><%= data.content %><a href=<%= data.url %> >view more</a></p>
+		<p><strong><%= data.source.name %></strong></p>
+		<p id="end"></p>
+		<hr></hr>
+	</div>
+<% }) %>
+</div>
+
+<%- include ('footer.html') %>
