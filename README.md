@@ -1,7 +1,7 @@
 # NEUS app
 
 This is a project that gives latest news in United States, using news API.
-its a simple Application, that receives API data and Displays it in a presentable format.
+Its a simple Application, that receives API data and Displays it in a presentable format.
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
