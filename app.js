@@ -14,7 +14,6 @@ app.set('view engine', 'ejs')
 //         console.log(response.json());
 //     })
 
-app.use(express.static(__dirname + 'views'));
 app.use(express.static(path.join(__dirname, '/public')));
 var options = {
 	method: 'GET',
