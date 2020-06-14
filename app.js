@@ -1,7 +1,8 @@
 var express = require("express"),
 app = express();
 rp = require('request-promise');
-var path = require('path');
+var path = require('path'),
+    port = process.env.PORT || 3000;
 
 
 app.set('view engine', 'ejs')
@@ -27,6 +28,6 @@ app.get('/', function(req, res){
 });
 
 
-app.listen(3000, function(){
+app.listen(port, function(){
 	console.log('News_app server has been started!')
 });
